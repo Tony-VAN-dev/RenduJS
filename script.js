@@ -3,9 +3,13 @@ const nomCommercial = document.getElementById("nomCommercial");
 let boutonAppel = document.getElementById("boutonAppel");
 let phraseAccroche = document.getElementById("phraseAccroche");
 let boutonExplorer = document.getElementById("boutonExplorer");
+//variables services
 let sectionTemoignages = document.getElementById("temoignages")
+//variables produits
 let sectionProduits = document.getElementById("produits");
-    let produitsContainer = document.getElementById("produitsContainer");
+let produitsContainer = document.getElementById("produitsContainer");
+// variables services
+let servicesContainer = document.getElementById("servicesContainer");
 
 
 //API URL
@@ -20,6 +24,7 @@ fetch(apiUrl)
     phraseAccroche.textContent = data.phraseAccroche;
     boutonExplorer.textContent = data.texteAppelAction;
     afficherProduits(data);
+    afficherServices(data);
     afficherTemoignages(data);
 });
 
@@ -56,16 +61,52 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
             //image
             image.src = produit["image-url"];
             image.style.width = "200px";
-
+            //produit description
+            let produitDescription = document.createElement("p");
+            produitDescription.textContent = produit.description;
+        
             //productCard.style
             productCard.style.border = "solid red 5px";
             productCard.style.width = "200px";
-            // produit.appendChild
+            // productCard.appendChild
+            
             productCard.appendChild(image);
             productCard.appendChild(productName);
+            productCard.appendChild(produitDescription);
             produitsContainer.appendChild(productCard);
             sectionProduits.appendChild(produitsContainer);
 
 
         });
+    }
+
+    function afficherServices(data){
+        //serviceContainer
+        data.services.forEach(service=>{
+        let serviceContainer = document.createElement("div");
+        
+            //serviceName
+        let serviceName = document.createElement("h1");
+        serviceName.textContent = service.nom;
+        // serviceDescription
+        let serviceDescription = document.createElement("p");
+        serviceDescription.textContent = service.description;
+        //serviceContainer.appendChild()w
+        serviceContainer.appendChild(serviceName);
+        serviceContainer.appendChild(serviceDescription);
+
+        //serviceContainer.style
+        serviceContainer.style.width = "200px";
+        serviceContainer.style.border = "solid black 5px";
+        serviceContainer.style.padding = "5px";
+        // servicesContainer.appendChild
+        servicesContainer.appendChild(serviceContainer);
+        console.log(serviceContainer);
+
+        // servicesContainer.style
+        servicesContainer.style.display = "flex";
+        servicesContainer.style.gap = "20px";
+        servicesContainer.style.justifyContent = "center";
+
+    });
     }
