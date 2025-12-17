@@ -39,3 +39,11 @@ main{
 #temoignages{
     background-color: azure;
 }
+
+#produits{
+    height:500px;
+    background-color: antiquewhite;
+    #produitsContainer{
+        display:flex;
+    }
+}

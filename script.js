@@ -5,6 +5,9 @@ let phraseAccroche = document.getElementById("phraseAccroche");
 let boutonExplorer = document.getElementById("boutonExplorer");
 let sectionTemoignages = document.getElementById("temoignages")
 let sectionProduits = document.getElementById("produits");
+    let produitsContainer = document.getElementById("produitsContainer");
+
+
 //API URL
 const apiUrl = "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/patisserie.json";
 
@@ -45,15 +48,14 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
 
  function afficherProduits(data){
         data.produits.forEach(produit => {
-            let productCard = document.createElement("div");
-            let image = document.createElement("img");
-            console.log(produit);
+            let productCard = document.createElement("div"); // carte du produit9
+            let image = document.createElement("img"); // création d'image
             image.src = produit["image-url"];
+            image.style.width = "200px";
 
             productCard.appendChild(image);
-            console.log(productCard);
-            sectionProduits.appendChild(productCard);
-
+            produitsContainer.appendChild(productCard);
+            sectionProduits.appendChild(produitsContainer);
 
 
         });
