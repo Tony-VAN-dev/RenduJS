@@ -29,9 +29,13 @@ fetch(apiUrl)
 });
 
 function afficherTemoignages(data){ // on met la data dans l'argument de la fonction
+    //témoignages cards container
+    let temoignagesCardsContainer = document.createElement("div");
+
     data.temoignages.forEach(temoin => {
         //container de chaque card
         let temoignageCard = document.createElement("div");
+        temoignageCard.style.width = "200px";
         // prenom témoin
         let prenom = document.createElement("p");
         prenom.textContent = temoin.prenom;
@@ -45,8 +49,12 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
         let typeExperience = document.createElement("p");
         typeExperience.textContent = temoin.typeExperience;
         temoignageCard.appendChild(typeExperience);
-        temoignages.appendChild(temoignageCard);
         
+        //temoignagesCardsContainer
+        temoignagesCardsContainer.appendChild(temoignageCard);
+        temoignages.appendChild(temoignagesCardsContainer);
+        temoignagesCardsContainer.style.display = "flex";
+        temoignagesCardsContainer.style.gap = "10px";
     });
 
 }
@@ -107,6 +115,6 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
         servicesContainer.style.display = "flex";
         servicesContainer.style.gap = "20px";
         servicesContainer.style.justifyContent = "center";
-
+        
     });
     }
