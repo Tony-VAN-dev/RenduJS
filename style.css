@@ -45,5 +45,6 @@ main{
     background-color: antiquewhite;
     #produitsContainer{
         display:flex;
+        gap:10px;
     }
 }

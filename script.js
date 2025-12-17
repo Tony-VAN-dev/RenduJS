@@ -50,10 +50,19 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
         data.produits.forEach(produit => {
             let productCard = document.createElement("div"); // carte du produit9
             let image = document.createElement("img"); // création d'image
+            //productname
+            let productName = document.createElement("h3");
+            productName.textContent = produit.nom;
+            //image
             image.src = produit["image-url"];
             image.style.width = "200px";
 
+            //productCard.style
+            productCard.style.border = "solid red 5px";
+            productCard.style.width = "200px";
+            // produit.appendChild
             productCard.appendChild(image);
+            productCard.appendChild(productName);
             produitsContainer.appendChild(productCard);
             sectionProduits.appendChild(produitsContainer);
 
