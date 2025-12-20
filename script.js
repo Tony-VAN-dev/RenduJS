@@ -31,7 +31,8 @@ fetch(apiUrl)
 
  function afficherProduits(data){
         data.produits.forEach(produit => {
-            let productCard = document.createElement("div"); // carte du produit9
+            let productCard = document.createElement("div"); // carte du produit
+            productCard.classList.add("productCard");
             let image = document.createElement("img"); // création d'image
             //productname
             let productName = document.createElement("h3");
@@ -43,9 +44,6 @@ fetch(apiUrl)
             let produitDescription = document.createElement("p");
             produitDescription.textContent = produit.description;
         
-            //productCard.style
-            productCard.style.border = "solid red 5px";
-            productCard.style.width = "200px";
             // productCard.appendChild
             
             productCard.appendChild(image);
@@ -63,7 +61,7 @@ fetch(apiUrl)
         data.services.forEach(service=>{
         let serviceContainer = document.createElement("div");
         serviceContainer.classList.add("serviceContainer");
-            //serviceName
+        //serviceName
         let serviceName = document.createElement("h1");
         serviceName.textContent = service.nom;
         // serviceDescription

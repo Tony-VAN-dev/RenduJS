@@ -67,7 +67,11 @@ main{
         display:flex;
         gap:10px;
         justify-content: center;
+        .productCard{
+            width:200px;
+            border: solid black 5px;
 
+        }
     }
 }
 
