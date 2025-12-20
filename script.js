@@ -81,16 +81,32 @@ function afficherTemoignages(data){ // on met la data dans le paramètre de la f
     //témoignages cards container
 
     data.temoignages.forEach(temoin => {
-        //container de chaque 
+        //container de chaque témoignage
         let temoignageCard = document.createElement("div");
         temoignageCard.classList.add("temoignageCard");
         temoignageCard.style.width = "200px";
+
+        // div étoiles
+        let divEtoiles = document.createElement("div");
+        // boucle sur le nombre d'étoiles afin d'afficher chaque étoile nécessaire
+        for(let i = 0; i < temoin.note ; i++)
+        {
+            let etoileImage = document.createElement("img");
+            etoileImage.src = "material-symbols_star-rounded.png";
+            divEtoiles.appendChild(etoileImage);
+        }
+
+        // temoin.note.forEach(note =>{
+    
+        // });
+
         // prenom témoin
         let prenom = document.createElement("p");
         prenom.textContent = temoin.prenom;
         prenom.style.textAlign ="center";
         temoignageCard.appendChild(prenom);
-
+        // ajout de la div d'étoiles dans témoignageCard
+        temoignageCard.appendChild(divEtoiles);
         //commentaire Témoin
         let commentaireTemoin = document.createElement("p");
         commentaireTemoin.textContent = temoin.commentaire;
