@@ -23,6 +23,24 @@ main{
     height:100vh;
     width:100%;
     background-image:cover;
+
+    .containerDansLeMain{
+        display:flex;
+        flex-direction: column;
+        width: 600px;
+        margin:auto;
+
+        #boutonAcheter{
+        font-size:20px;
+        width:100px;
+        }
+        #boutonExplorer{
+            font-size:20px;
+            width:250px;
+        }
+    }
+
+    
 }
 
 #nomCommercial
@@ -96,3 +114,15 @@ main{
         serviceContainer.style.padding = "5px"; */
     }
 }
+
+footer{
+    a{
+        color:rgb(0, 0, 0);
+        
+    }
+    #footerContenusContainer{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+

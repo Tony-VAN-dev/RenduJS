@@ -20,11 +20,16 @@
     </header>
 
     <main>
-        
-        <h1 id="nomCommercial"></h1>
-        <p id="phraseAccroche"></p>
-        <button>Acheter</button>
-        <button id="boutonExplorer"></button>
+        <div class="containerDansLeMain">
+            <h1 id="nomCommercial"></h1>
+            <p id="phraseAccroche"></p>
+            <div id="divDeBoutons">
+                <button id="boutonAcheter">Acheter</button>
+                <button id="boutonExplorer"></button>
+            </div>
+            
+        </div>
+    
     </main>
     <section id="pourquoi">
         <h1></h1>
@@ -56,18 +61,28 @@
     </section>
 
     <footer>
-        <div>
-        <h1>TouBon</h1>
+        <div id="footerContenusContainer">
+            <div>
+            <h1>TouBon</h1>
+                <p>Adresse</p>
+                <p>Niveau 1, 12 rue des Charpentiers</p>
 
+                <p>Contact</p>
+                <p>1964832049</p>
+                <div id="logosReseaux">
+                    
+                </div>
+            </div>
+            <div>
+                <a href="">Accueil</a>
+                <a href="">Avantages</a>
+                <a href="">Produits</a>
+                <a href="">Services</a>
+                <a href="">Témoignages</a>
+            </div>
         </div>
-        <div>
-            <a href="">Accueil</a>
-            <a href="">Avantages</a>
-            <a href="">Produits</a>
-            <a href="">Services</a>
-            <a href="">Témoignages</a>
-        </div>
-        <p>Toubon</p>
+            
+        <p id="companyName">Toubon</p>
        
     </footer>
     <script src="script.js"></script>
