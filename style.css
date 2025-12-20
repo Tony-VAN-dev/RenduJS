@@ -102,7 +102,7 @@ main{
 }
 
 #produits{
-    height:500px;
+    height:600px;
 
     h1{
         text-align: center;
@@ -175,6 +175,11 @@ footer{
             gap: 10px;
             font-family:Arial, Helvetica, sans-serif;
         }
+        
     }
+    #companyName{
+            font-size:100px;
+            text-align: center;
+        }
 }
 
