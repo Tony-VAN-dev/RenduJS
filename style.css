@@ -29,9 +29,10 @@ main{
     .containerDansLeMain{
         display:flex;
         flex-direction: column;
-        width: 600px;
         margin:auto;
-
+        justify-content: center;
+        align-items: center;
+        height:100%;
         #boutonAcheter{
         font-size:20px;
         width:100px;
