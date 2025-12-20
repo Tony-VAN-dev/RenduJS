@@ -162,7 +162,8 @@ footer{
         
     }
     #footerContenusContainer{
-        padding:100px;
+        padding-top:60px;
+        padding-inline:100px;
         display:flex;
         justify-content: space-between;
         #numTelephone{
@@ -178,8 +179,20 @@ footer{
         
     }
     #companyName{
-            font-size:100px;
+            font-size:200px;
             text-align: center;
+            border-bottom: solid 5px black;
+        }
+        #footerDroits{
+            display:flex;
+            justify-content: space-between;
+            padding-inline:100px;
+            padding-bottom:20px;
+            font-size:20px;
+            #politiqueCoteDroit{
+                display:flex;
+                gap:20px;
+            }
         }
 }
 
