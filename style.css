@@ -1,5 +1,7 @@
 body{
     margin:0px;
+    background-color: antiquewhite;
+
 }
 header{
     background-color: rgb(230, 227, 227);
@@ -57,7 +59,6 @@ main{
 }
 
 #temoignages{
-    background-color: azure;
     h1{
         text-align: center;
     }
@@ -77,7 +78,7 @@ main{
 
 #produits{
     height:500px;
-    background-color: antiquewhite;
+
     h1{
         text-align: center;
     }
