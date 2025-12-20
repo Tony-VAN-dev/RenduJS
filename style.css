@@ -2,7 +2,7 @@ body{
     margin:0px;
 }
 header{
-    background-color: gray;
+    background-color: rgb(230, 227, 227);
     display:flex;
     justify-content: space-between;
     padding:10px 50px 10px 50px;

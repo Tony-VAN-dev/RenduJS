@@ -67,7 +67,7 @@ fetch(apiUrl)
         // serviceDescription
         let serviceDescription = document.createElement("p");
         serviceDescription.textContent = service.description;
-        //serviceContainer.appendChild()w
+        //serviceContainer.appendChild()
         serviceContainer.appendChild(serviceName);
         serviceContainer.appendChild(serviceDescription);
 
@@ -81,7 +81,7 @@ fetch(apiUrl)
     });
     }
 
-function afficherTemoignages(data){ // on met la data dans l'argument de la fonction
+function afficherTemoignages(data){ // on met la data dans le paramètre de la fonction
     
     //témoignages cards container
 
