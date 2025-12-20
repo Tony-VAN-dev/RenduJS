@@ -88,6 +88,7 @@ function afficherTemoignages(data){ // on met la data dans le paramètre de la f
 
         // div étoiles
         let divEtoiles = document.createElement("div");
+        divEtoiles.style.textAlign = "center";
         // boucle sur le nombre d'étoiles afin d'afficher chaque étoile nécessaire
         for(let i = 0; i < temoin.note ; i++)
         {
