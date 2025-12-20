@@ -73,6 +73,8 @@ main{
             border:solid rgb(0, 0, 0) 5px;
             border-radius: 15px;
             padding:10px;
+            background-color: rgb(185, 169, 169);
+
         }
     }
 }
@@ -98,6 +100,7 @@ main{
 
 
 #services{
+        background-color: rgb(199, 184, 163);
     h1{
         text-align: center;
     }
@@ -110,6 +113,8 @@ main{
         border: solid black 5px;
         border-radius:15px;
         padding: 5px;
+        background-color: rgb(114, 89, 89);
+        color:white;
         }
                 /* serviceContainer.style.width = "200px";
         serviceContainer.style.border = "solid black 5px";
