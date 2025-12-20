@@ -111,10 +111,5 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
         servicesContainer.appendChild(serviceContainer);
         console.log(serviceContainer);
 
-        // servicesContainer.style
-        servicesContainer.style.display = "flex";
-        servicesContainer.style.gap = "20px";
-        servicesContainer.style.justifyContent = "center";
-        
     });
     }

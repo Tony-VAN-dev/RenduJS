@@ -21,6 +21,8 @@ nav{
 main{
     background-image:url("https://www.grizette.com/wp-content/uploads/2021/04/Patisserie-Montpellier%C2%A9Edalin-AdobeStock.jpeg");
     height:100vh;
+    width:100%;
+    background-image:cover;
 }
 
 #nomCommercial
@@ -43,10 +45,22 @@ main{
 #produits{
     height:500px;
     background-color: antiquewhite;
+    h1{
+        text-align: center;
+    }
     #produitsContainer{
         display:flex;
         gap:10px;
         justify-content: center;
 
+    }
+}
+
+
+#services{
+    #servicesContainer{
+        display :flex;
+        gap:20px;
+        justify-content:center;
     }
 }
