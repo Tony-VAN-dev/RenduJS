@@ -95,6 +95,7 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
         // prenom témoin
         let prenom = document.createElement("p");
         prenom.textContent = temoin.prenom;
+        prenom.style.textAlign ="center";
         temoignageCard.appendChild(prenom);
 
         //commentaire Témoin

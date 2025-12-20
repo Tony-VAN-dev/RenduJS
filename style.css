@@ -40,6 +40,9 @@ main{
 
 #temoignages{
     background-color: azure;
+    h1{
+        text-align: center;
+    }
     #temoignagesCardsContainer{
         width:600px;
         margin:auto;
@@ -47,7 +50,9 @@ main{
         justify-content:center;
         gap:20px;
         .temoignageCard{
-            border:solid blue 5px;
+            border:solid rgb(0, 0, 0) 5px;
+            border-radius: 15px;
+            padding:10px;
         }
     }
 }
@@ -68,6 +73,9 @@ main{
 
 
 #services{
+    h1{
+        text-align: center;
+    }
     #servicesContainer{
         display :flex;
         gap:20px;
