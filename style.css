@@ -121,8 +121,12 @@ footer{
         
     }
     #footerContenusContainer{
+        padding:100px;
         display:flex;
         justify-content: space-between;
+        #numTelephone{
+            text-decoration: underline;
+        }
     }
 }
 
