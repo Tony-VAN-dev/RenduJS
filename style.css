@@ -80,5 +80,13 @@ main{
         display :flex;
         gap:20px;
         justify-content:center;
+        #serviceContainer{
+        width:200px;
+        border: solid black 5px;
+        padding: 5px;
+        }
+                /* serviceContainer.style.width = "200px";
+        serviceContainer.style.border = "solid black 5px";
+        serviceContainer.style.padding = "5px"; */
     }
 }

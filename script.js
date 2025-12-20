@@ -74,9 +74,9 @@ fetch(apiUrl)
         serviceContainer.appendChild(serviceDescription);
 
         //serviceContainer.style
-        serviceContainer.style.width = "200px";
-        serviceContainer.style.border = "solid black 5px";
-        serviceContainer.style.padding = "5px";
+        // serviceContainer.style.width = "200px";
+        // serviceContainer.style.border = "solid black 5px";
+        // serviceContainer.style.padding = "5px";
         // servicesContainer.appendChild
         servicesContainer.appendChild(serviceContainer);
 
