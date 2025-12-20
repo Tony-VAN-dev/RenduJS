@@ -62,7 +62,7 @@ fetch(apiUrl)
         //serviceContainer
         data.services.forEach(service=>{
         let serviceContainer = document.createElement("div");
-        
+        serviceContainer.classList.add("serviceContainer");
             //serviceName
         let serviceName = document.createElement("h1");
         serviceName.textContent = service.nom;

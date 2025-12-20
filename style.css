@@ -80,7 +80,7 @@ main{
         display :flex;
         gap:20px;
         justify-content:center;
-        #serviceContainer{
+        .serviceContainer{
         width:200px;
         border: solid black 5px;
         padding: 5px;
