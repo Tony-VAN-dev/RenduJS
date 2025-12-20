@@ -10,7 +10,8 @@ let sectionProduits = document.getElementById("produits");
 let produitsContainer = document.getElementById("produitsContainer");
 // variables services
 let servicesContainer = document.getElementById("servicesContainer");
-
+//variables temoignages
+let temoignagesCardsContainer = document.getElementById("temoignagesCardsContainer");
 
 //API URL
 const apiUrl = "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/patisserie.json";
@@ -27,37 +28,6 @@ fetch(apiUrl)
     afficherServices(data);
     afficherTemoignages(data);
 });
-
-function afficherTemoignages(data){ // on met la data dans l'argument de la fonction
-    //témoignages cards container
-    let temoignagesCardsContainer = document.createElement("div");
-
-    data.temoignages.forEach(temoin => {
-        //container de chaque card
-        let temoignageCard = document.createElement("div");
-        temoignageCard.style.width = "200px";
-        // prenom témoin
-        let prenom = document.createElement("p");
-        prenom.textContent = temoin.prenom;
-        temoignageCard.appendChild(prenom);
-
-        //commentaire Témoin
-        let commentaireTemoin = document.createElement("p");
-        commentaireTemoin.textContent = temoin.commentaire;
-        temoignageCard.appendChild(commentaireTemoin);
-        //type experience
-        let typeExperience = document.createElement("p");
-        typeExperience.textContent = temoin.typeExperience;
-        temoignageCard.appendChild(typeExperience);
-        
-        //temoignagesCardsContainer
-        temoignagesCardsContainer.appendChild(temoignageCard);
-        temoignages.appendChild(temoignagesCardsContainer);
-        temoignagesCardsContainer.style.display = "flex";
-        temoignagesCardsContainer.style.gap = "10px";
-    });
-
-}
 
  function afficherProduits(data){
         data.produits.forEach(produit => {
@@ -109,7 +79,35 @@ function afficherTemoignages(data){ // on met la data dans l'argument de la fonc
         serviceContainer.style.padding = "5px";
         // servicesContainer.appendChild
         servicesContainer.appendChild(serviceContainer);
-        console.log(serviceContainer);
 
     });
     }
+
+function afficherTemoignages(data){ // on met la data dans l'argument de la fonction
+    
+    //témoignages cards container
+
+    data.temoignages.forEach(temoin => {
+        //container de chaque 
+        let temoignageCard = document.createElement("div");
+        temoignageCard.classList.add("temoignageCard");
+        temoignageCard.style.width = "200px";
+        // prenom témoin
+        let prenom = document.createElement("p");
+        prenom.textContent = temoin.prenom;
+        temoignageCard.appendChild(prenom);
+
+        //commentaire Témoin
+        let commentaireTemoin = document.createElement("p");
+        commentaireTemoin.textContent = temoin.commentaire;
+        temoignageCard.appendChild(commentaireTemoin);
+        //type experience
+        let typeExperience = document.createElement("p");
+        typeExperience.textContent = temoin.typeExperience;
+        temoignageCard.appendChild(typeExperience);
+        console.log(temoignageCard + "test");
+        //temoignagesCardsContainer
+        temoignagesCardsContainer.appendChild(temoignageCard);
+    });
+
+}

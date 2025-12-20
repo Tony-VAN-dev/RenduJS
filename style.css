@@ -40,6 +40,16 @@ main{
 
 #temoignages{
     background-color: azure;
+    #temoignagesCardsContainer{
+        width:600px;
+        margin:auto;
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        .temoignageCard{
+            border:solid blue 5px;
+        }
+    }
 }
 
 #produits{
